@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    sentiment_ja:
+        image: "sentiment_ja:v1"
+        container_name: sentiment_ja
+        # command: /bin/bash
+    #   environment:
+    #     - ALLOW_EMPTY_PASSWORD=yes
+        ports:
+            - "5002:5001"
+    #   volumes:
+    #     - ' $(pwd)/mongodb_data:/bitnami/mongodb'

@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<form method="POST">
+    <textarea cols="100" name="textbox" placeholder="Type here" rows="5"></textarea>
+    <button id="submit" type="submit">Analyze</button>
+</form>
+<p id="result"> Label: {{label}} <br> Text:  {{text}}</p>
+</body>
+<script>
+           function clearBox()
+            {
+                document.getElementById("result").textContent = "";
+            }
+            document.getElementById("submit").addEventListener("click", clearBox);
+
+</script>
+</html>

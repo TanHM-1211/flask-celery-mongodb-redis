@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  mongodb:
+    image: docker.io/bitnami/mongodb:4.4
+    container_name: mongodb_sentiment_ja
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "27017:27017"
+    volumes:
+      - './mongodb_data:/bitnami/mongodb'

@@ -1,0 +1,11 @@
+.idea/
+__pycache__/
+
+.vscode/
+gunicorn/*
+data/**
+save/**
+mongodb/mongodb_data/**
+redis/redis_data/**
+celery/**
+log/**
