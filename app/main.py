@@ -117,7 +117,7 @@ def create_job():
 
 
 from app import celery
-@bp.route('/check-asyn-sentiment', methods=['GET', 'POST'])
+@bp.route('/check-asyn', methods=['GET', 'POST'])
 def get_status():
     result = {"result": None, 'message': None, 'status': None}
     try:
