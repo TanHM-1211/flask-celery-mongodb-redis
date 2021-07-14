@@ -27,7 +27,7 @@ cors = CORS(bp)
 def _home():
     data = {}
     if 'textbox' in request.form:
-        data['text'] = str(request.form.get('textbox'))
+        data['input'] = str(request.form.get('textbox'))
     else:
         return render_template('home.html')
     return home(data)

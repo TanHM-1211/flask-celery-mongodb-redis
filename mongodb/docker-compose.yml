@@ -3,7 +3,7 @@ version: '2'
 services:
   mongodb:
     image: docker.io/bitnami/mongodb:4.4
-    container_name: mongodb_sentiment_ja
+    container_name: mongodb_test
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
